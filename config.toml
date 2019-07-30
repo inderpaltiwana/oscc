@@ -1,4 +1,21 @@
 baseURL = "http://upbeat-lewin-f7503d.netlify.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Open Source Schoolss"
 theme = "KeepIt"
+
+[[menu.main]]
+    name = "About"
+    url  = "/#about"
+    weight = 1
+[[menu.main]]
+    name = "Welcome"
+    url  = "/#welcome"
+    weight = 2
+[[menu.main]]
+    name = "Initative"
+    url  = "/#initatives"
+    weight = 3
+[[menu.main]]
+    name = "Admin"
+    url  = "/admin"
+    weight = 4
