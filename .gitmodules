@@ -1,3 +1,9 @@
 [submodule "oscc/themes/KeepIt"]
 	path = oscc/themes/KeepIt
 	url = https://github.com/Fastbyte01/KeepIt.git
+[submodule "themes/--force"]
+	path = themes/--force
+	url = https://github.com/Fastbyte01/KeepIt.git
+[submodule "themes/test"]
+	path = themes/test
+	url = https://github.com/Fastbyte01/KeepIt.git
