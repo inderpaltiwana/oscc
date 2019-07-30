@@ -12,8 +12,8 @@ theme = "KeepIt"
     url  = "/#welcome"
     weight = 2
 [[menu.main]]
-    name = "Initative"
-    url  = "/#initatives"
+    name = "Blog Posts"
+    url  = "/#blog-posts"
     weight = 3
 [[menu.main]]
     name = "Admin"
