@@ -1,6 +1,6 @@
 baseURL = "http://upbeat-lewin-f7503d.netlify.com/"
 languageCode = "en-us"
-title = "Open Source Schoolss"
+title = "Open Source Schools"
 theme = "KeepIt"
 
 [[menu.main]]
@@ -12,8 +12,8 @@ theme = "KeepIt"
     url  = "/#welcome"
     weight = 2
 [[menu.main]]
-    name = "Initative"
-    url  = "/#initatives"
+    name = "Blog Posts"
+    url  = "/#blog-posts"
     weight = 3
 [[menu.main]]
     name = "Admin"
