@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source Schools on Open Source Schools</title>
+    <link>http://upbeat-lewin-f7503d.netlify.com/</link>
+    <description>Recent content in Open Source Schools on Open Source Schools</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://upbeat-lewin-f7503d.netlify.com/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>http://upbeat-lewin-f7503d.netlify.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://upbeat-lewin-f7503d.netlify.com/about/</guid>
+      <description>&lt;p&gt;this website does stuff&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
