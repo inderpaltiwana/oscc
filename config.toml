@@ -5,17 +5,21 @@ theme = "KeepIt"
 
 [[menu.main]]
     name = "About"
-    url  = "/#about"
+    url  = "/about"
     weight = 1
 [[menu.main]]
     name = "Welcome"
-    url  = "/#welcome"
+    url  = "/welcome"
     weight = 2
 [[menu.main]]
-    name = "Blog Posts"
-    url  = "/#blog-posts"
+    name = "Posts"
+    url  = "/posts"
     weight = 3
 [[menu.main]]
     name = "Admin"
     url  = "/admin"
+    weight = 5
+[[menu.main]]
+    name = "Get Involved"
+    url  = "/get-involved"
     weight = 4

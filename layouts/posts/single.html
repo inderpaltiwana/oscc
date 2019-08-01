@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<main>
+
+  <section class="container">
+    <section class="content">
+      <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+
+      <div class="sub-header">
+        Posted {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} by {{ .Params.author }} -
+        {{ .Params.jobtitle }}
+      </div>
+
+      <article class="entry-content">
+        {{ .Content }}
+      </article>
+
+      <div class="pagination">
+        {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ .PrevInSection.Title }}</a>
+        {{ end }}
+        {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &raquo;</a>
+        {{ end }}
+      </div>
+    </section>
+    <br>
+    <div class="addthis_inline_share_toolbox"></div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{- .Site.Params.addThis -}}"
+      async></script>
+
+
+  </section>
+
+</main>
+
+</html>
