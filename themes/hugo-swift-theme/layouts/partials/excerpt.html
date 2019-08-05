@@ -1,0 +1,17 @@
+<li class = 'duo post_item'>
+  <a class = 'show' href='{{ .RelPermalink }}' title = '{{ .Title }}'
+    style = 'background-image: url(/images/{{ .Params.image }});'>
+  </a>
+  <div class = 'excerpt'>
+    {{ with .Params.tags -}}
+    <div class = 'excerpt_meta'>
+      {{ range first 1 . }}<a href = '/tags/{{ . | urlize }}' class = 'post_tag'>{{ . }}</a>{{ end }}
+      <div class = 'copy'></div>
+    </div>
+    {{- end }}
+    <h3 class = 'post_link'>
+      <a href='{{ .RelPermalink }}'>{{ .Title  }}</a>
+    </h3>
+    <p class = 'pale'>{{ .Summary | truncate 90 }}</p>
+  </div>
+</li>

@@ -1,0 +1,208 @@
+.intro{
+  margin: 4rem 0 1rem;
+  background: $dark;
+  padding: 2rem 1.5rem;
+  color: $light;
+  &_inner{
+    @include viewport(59rem);
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    background-color: var(--bubble);
+    border-radius: 1rem;
+  }
+  &_headline{
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  &_desc {
+    opacity: 0.8;
+    text-align: center;
+  }
+}
+.show{
+  display: block;
+  position:relative;
+  background-color:$dark;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-size:cover;
+  background-position:center;
+  overflow: hidden;
+  height:10rem;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+  }
+  &:hover::after {
+    background-color:rgba($dark,0.3);
+  }
+}
+
+.btn{
+  min-width: 150px;
+  font-size: 1rem;
+  margin: 1rem 0 1.5rem;
+  display: inline-block;
+  padding: 7.5px 12.5px;
+  background-color: $theme;
+  box-shadow: 0 1rem 4rem rgba($dark,0.5);
+  color: $light;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+.gravatar{
+  background: $light;
+  width:90px;
+  border-radius:50%;
+  display:inline-block;
+  position: absolute;
+  bottom:-30px;
+  margin:0 10px 0 0;
+  @include shadow;
+  z-index: 2;
+}
+
+aside h3{
+  position:relative;
+  margin:0 !important;
+}
+
+.nav-secondary,
+.user-menu{
+  display: none !important;
+}
+
+span.right {
+  color: $theme;
+}
+section p{
+  text-align:left;
+  padding:10px 0;
+}
+.transparent{
+  padding:25px;
+}
+.point{
+  margin-right:15px;
+  color:$theme;
+}
+.wrap{
+  padding:30px 40px 50px 40px;
+}
+.hold{
+  position:relative;
+  overflow:visible;
+}
+.site{
+  &__icon{
+    width:40px;
+    margin: 0 10px 0 0;
+  }
+}
+@media screen and (min-width: 769px){
+  .nav-menu a{
+    display:inline-block;
+    height:initial;
+    text-align:left;
+  }
+  .duo{
+    width:46.5%;
+  }
+  .mobile{
+    display:none;
+  }
+}
+
+.video{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  background-color: var(--bg);
+  box-shadow: 0 1rem 4rem rgba($dark,0.17);
+  iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    transform: scale(1.03);
+  }
+}
+
+.copy {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(/images/icons/copy.svg);
+  background-size: 100%;
+  cursor: pointer;
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    background: $theme;
+    color: $light;
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+  }
+  &::before {
+    content: "Share Story";
+    font-size: 0.8rem;
+    width: 5.4rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    top: -2rem;
+    right: 0;
+  }
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+  }
+}
+.author,
+.comment {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-gap: 0 1rem ;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: var(--accent);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 2rem rgba($dark, 0.12);
+  &_name {
+    color: var(--text) !important;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+  }
+  &_pic {
+    border-radius: 50%;
+    padding: 0.25rem;
+    margin: 0 0 0 -0.25rem;
+    border-color: $theme transparent;
+    border-style: solid;
+    border-width: 1px;
+  }
+  &_bio {
+    padding-bottom: 0 !important;
+    line-height: 1.33;
+  }
+  &_heading {
+    font-size: 0.7rem;
+  }
+  &_meta {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
