@@ -1,4 +1,4 @@
-baseURL = "http://upbeat-lewin-f7503d.netlify.com/"
+baseURL = "https://openschools.netlify.com/"
 languageCode = "en-us"
 title = "Open Source Schools"
 theme = "KeepIt"
