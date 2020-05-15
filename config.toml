@@ -1,25 +1,29 @@
-baseURL = "https://openschools.netlify.com/"
+baseURL = "/"
 languageCode = "en-us"
-title = "Open Source Schools"
-theme = "KeepIt"
+title = "Open Schools Coding Competition"
+theme = "kube"
+description = "The Open Schools Coding Competition is a challenge for secondary school students to undertake in teams finding and learning about new and interesting skills in the world of technology"
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "newpixcom" # add your company name
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "myemail@myaddress.xxx"
 
 [[menu.main]]
-    name = "About"
-    url  = "/about"
-    weight = 1
+    name = "Getting Started"
+    weight = -100
+    url = "/getting-started/"
 [[menu.main]]
-    name = "Welcome"
-    url  = "/welcome"
-    weight = 2
+    name = "Blog"
+    weight = -100
+    url = "/blog/"
 [[menu.main]]
-    name = "Posts"
-    url  = "/posts"
-    weight = 3
+    name = "Faq"
+    weight = -100
+    url = "/frequently-asked-questions/"
 [[menu.main]]
-    name = "Admin"
-    url  = "/admin"
-    weight = 5
-[[menu.main]]
-    name = "Get Involved"
-    url  = "/get-involved"
-    weight = 4
+    name = "Previous Entries"
+    weight = -100
+    url = "/previous-entries/"
